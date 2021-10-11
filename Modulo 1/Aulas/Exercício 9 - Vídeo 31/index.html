@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML5.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <p><a href="https://studio.youtube.com/channel/UCxuw6tEmaRNgnOr6-f303Ug/music" target="_blank" rel="external">Clique aqui</a> para acessar a biblioteca de áudio com licensa do youtube.</p>
+    <picture>
+        <!--Source serve para adapitar a imagem para dispositivos diferentes. E precisa seguir essa ordem (do maior para o menor)-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens flexível">
+
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir Áudios em HTML5.</p>
+    <audio src="midia/som-calmo-ambiente.mp3" controls autoplay loop></audio>
+    <!--MP3 WAV OGG-->
+    <p>Acesse a <a href="pag002.html" target="_self" rel="next">segunda página</a> para ter acesso aos outros áudio.</p>
+</body>
+</html>
